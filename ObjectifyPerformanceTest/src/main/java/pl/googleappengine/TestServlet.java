@@ -11,7 +11,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Set;
-import java.util.UUID;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -37,6 +36,7 @@ public class TestServlet extends HttpServlet {
 			throws ServletException, IOException {
 
 		String action = req.getParameter("action");
+		resp.setContentType("text/plain");
 
 		switch (action) {
 		case "create":
@@ -135,7 +135,7 @@ public class TestServlet extends HttpServlet {
 			ObjectifyTestChildEntry entry = new ObjectifyTestChildEntry();
 			entry.setFirstName("First" + i);
 			entry.setLastName("last" + i);
-			entry.setValueObject(UUID.randomUUID().toString());
+			entry.setValueObject("someValue");
 			entry.setCreateDate(new Date());
 			result.add(entry);
 		}

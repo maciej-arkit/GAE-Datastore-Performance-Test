@@ -31,7 +31,7 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="OUTPUT_DIR" elementType="Argument">
             <stringProp name="Argument.name">OUTPUT_DIR</stringProp>
-            <stringProp name="Argument.value">C:\Users\Maciek\GoogleAppEngine\Blog\JPA_vs_Objectify\results\\${__time(yyyy-MM-dd_HH-mm-ss)}</stringProp>
+            <stringProp name="Argument.value">${__BeanShell(import org.apache.jmeter.services.FileServer; FileServer.getFileServer().getBaseDir();)}${__BeanShell(File.separator,)}\results\\${__time(yyyy-MM-dd_HH-mm-ss)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>

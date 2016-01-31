@@ -44,7 +44,7 @@ public class ObjectifyTestChildEntry {
 	}
 	@Override
 	public String toString() {
-		return "ObjectifyTestChildEntry [id=" + id + ", firstName=" + firstName
+		return "ChildEntry [id=" + id + ", firstName=" + firstName
 				+ ", lastName=" + lastName + ", valueObject=" + valueObject
 				+ ", createDate=" + createDate + "]";
 	}

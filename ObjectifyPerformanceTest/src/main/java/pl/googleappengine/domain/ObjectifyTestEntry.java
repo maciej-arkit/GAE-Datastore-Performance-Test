@@ -151,7 +151,7 @@ public class ObjectifyTestEntry implements Serializable {
 
 	@Override
 	public String toString() {
-		return "ObjectifyTestEntry [id=" + id + ", name=" + name
+		return "Entry [id=" + id + ", name=" + name
 				+ ", streetAddress=" + streetAddress + ", zipCode=" + zipCode
 				+ ", cityName=" + cityName + ", contactEmail=" + contactEmail
 				+ ", contactPhone=" + contactPhone + ", webSite=" + webSite
